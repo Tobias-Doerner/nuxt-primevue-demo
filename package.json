@@ -14,13 +14,16 @@
   },
   "dependencies": {
     "@nuxtjs/i18n": "^8.5.0",
+    "@primevue/themes": "^4.2.1",
     "nuxt": "^3.12.3",
+    "primevue": "^4.2.1",
     "vue": "latest"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.8.0",
     "@intlify/eslint-plugin-vue-i18n": "^3.0.0",
     "@nuxt/eslint": "^0.6.0",
+    "@primevue/nuxt-module": "^4.2.1",
     "eslint": "^9.13.0"
   }
 }

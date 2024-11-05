@@ -16,9 +16,5 @@ const currentLocale = computed({
 </script>
 
 <template>
-  <select v-model="currentLocale">
-    <option v-for="loc in locales" :key="loc.code" :value="loc">
-      {{ loc.code }}
-    </option>
-  </select>
+  <Select v-model="currentLocale" :options="locales" option-label="code" />
 </template>

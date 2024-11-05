@@ -1,10 +1,13 @@
+import Aura from '@primevue/themes/aura'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
   compatibilityDate: '2024-07-04',
-  modules: ['@nuxt/eslint', '@nuxtjs/i18n'],
+  modules: ['@nuxt/eslint', '@nuxtjs/i18n', '@primevue/nuxt-module'],
   nitro: {
     compressPublicAssets: true,
+    minify: true,
   },
   ssr: false,
   eslint: {
@@ -37,5 +40,12 @@ export default defineNuxtConfig({
       },
     ],
     strategy: 'no_prefix',
+  },
+  primevue: {
+    options: {
+      theme: {
+        preset: Aura,
+      },
+    },
   },
 })
