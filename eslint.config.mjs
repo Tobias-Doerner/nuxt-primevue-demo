@@ -2,9 +2,12 @@
 import antfu from '@antfu/eslint-config'
 // @ts-ignore
 import vueI18n from '@intlify/eslint-plugin-vue-i18n'
+// @ts-ignore
+import tailwind from 'eslint-plugin-tailwindcss'
 import withNuxt from './.nuxt/eslint.config.mjs'
 
 export default withNuxt(antfu({}))
+  .prepend(...tailwind.configs['flat/recommended'])
   .prepend(...vueI18n.configs['flat/recommended'])
   .override('@intlify/vue-i18n:base:setup', {
     rules: {

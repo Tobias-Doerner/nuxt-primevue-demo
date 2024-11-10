@@ -26,6 +26,7 @@
     "@intlify/eslint-plugin-vue-i18n": "^3.0.0",
     "@nuxt/eslint": "^0.6.0",
     "@primevue/nuxt-module": "^4.2.1",
-    "eslint": "^9.13.0"
+    "eslint": "^9.13.0",
+    "eslint-plugin-tailwindcss": "^3.17.5"
   }
 }
