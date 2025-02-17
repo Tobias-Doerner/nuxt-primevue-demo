@@ -2,5 +2,10 @@
   "app": {
     "description": "Demobeschreibung",
     "name": "Demo"
+  },
+  "navbar": {
+    "about": "Über",
+    "home": "Home",
+    "pages": "Seiten"
   }
 }

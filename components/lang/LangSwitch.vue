@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import { useI18n } from 'vue-i18n'
-
 const { locale, locales, setLocale } = useI18n()
 
 const currentLocale = computed({
@@ -16,5 +13,5 @@ const currentLocale = computed({
 </script>
 
 <template>
-  <Select v-model="currentLocale" :options="locales" option-label="code" />
+  <Select v-model="currentLocale" :options="locales" option-label="code" size="small" />
 </template>
