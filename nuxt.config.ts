@@ -51,6 +51,13 @@ const CustomNora = definePreset(Nora, {
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app: {
+    head: {
+      htmlAttrs: {
+        class: 'app-dark',
+      },
+    },
+  },
   devtools: { enabled: true },
   compatibilityDate: '2024-07-04',
   css: ['@/assets/main.css'],
@@ -78,7 +85,6 @@ export default defineNuxtConfig({
       redirectOn: 'root',
       useCookie: true,
     },
-    langDir: 'i18n',
     lazy: true,
     locales: [
       {
@@ -103,7 +109,7 @@ export default defineNuxtConfig({
         preset: CustomNora,
         options: {
           prefix: 'p',
-          darkModeSelector: 'system',
+          darkModeSelector: '.app-dark',
         },
       },
     },
