@@ -58,7 +58,7 @@ export default defineNuxtConfig({
       },
     },
   },
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   compatibilityDate: '2024-07-04',
   css: ['@/assets/main.css'],
   modules: [
@@ -104,6 +104,9 @@ export default defineNuxtConfig({
   },
   primevue: {
     autoImport: true,
+    components: {
+      exclude: ['Chart', 'Editor'],
+    },
     options: {
       theme: {
         preset: CustomNora,
@@ -113,5 +116,9 @@ export default defineNuxtConfig({
         },
       },
     },
+  },
+  tailwindcss: {
+    exposeConfig: true,
+    viewer: false,
   },
 })
